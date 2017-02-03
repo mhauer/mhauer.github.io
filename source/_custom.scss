@@ -47,6 +47,7 @@ header[logo] {
   transform: translateX(-50%);
   color: getColor(green, darker);
   background-color: getColor(green, neon);
+  z-index: 20000;
 }
 
 main[grid] {
@@ -56,7 +57,7 @@ main[grid] {
 section[intro] {
   min-height:100vh;
   background-color: getColor(background, cover);
-  padding-top: 5lh;
+  padding-top: 7lh;
 
   // if screen size is bigger than "small"
   @media (--small) { padding-top: 9lh }
@@ -73,16 +74,24 @@ header[small] {
   font-weight: bold;
 }
 
-header[list] {
-
+header[intro] {
+  color: getColor(gray, base);
 }
 
 p[intro] {
   font-size: typeScale(4);
+  margin-top: 0;
   margin-bottom: 2lh;
+
 }
 
 p[connect] {
   font-size: typeScale(4);
   width: 75%;
+}
+
+footer[container] {
+  border-top: 1px solid whitesmoke;
+  padding: 1lh;
+  color: getColor(gray, light);
 }
