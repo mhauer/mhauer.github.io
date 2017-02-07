@@ -3,20 +3,23 @@
 // --------------------------------------------------
 
 // Font size for small devices
-$font-size: 12;
-
+$font-size: 14;
 // Font size for big devices
 $font-size-secondary: 14;
 
-// Tracking
+// Tracking / cap
 $letter-spacing: 0.05em;
+$cap-height: 0.75;
+
+// Line Height
+$line-height: 1.5;
+
+// Real Typography
+$font-size-mega-base: $font-size * 1px;
+$line-height-mega: ($font-size * $line-height) * 1px;
 
 // Font families
 $font-primary: "Oakes Web", "Helvetica", "Arial", sans-serif;
-$font-secondary: "Oakes Web", "Helvetica", "Arial", sans-serif;
-$font-mono: "Consolas", monospace;
-$font-print-primary: "Georgia", "Times New Roman", "Times", serif;
-$font-print-secondary: "Georgia", "Times New Roman", "Times", serif;
 
 // Enable margins to all the elements
 // except the first one in each nesting level
@@ -117,7 +120,7 @@ $colors: (
     "light": #f5f5f5,
     "body":  white,
     "logo": white,
-    "cover": #f7f7f7
+    "cover": rgba(0, 0, 0, 0.05)
   ),
 
   state: (

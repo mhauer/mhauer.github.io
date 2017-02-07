@@ -9,7 +9,7 @@
 @import "settings";
 
 // Concise Core
-@import "node_modules/concise.css/concise";
+@import "node_modules/concise.css/concise.scss";
 
 // Custom
-@import "_custom"
+@import "custom";

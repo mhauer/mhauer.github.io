@@ -8,6 +8,7 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-feature-settings: 'kern', 'onum', 'liga';
+
 }
 
 a {
@@ -41,12 +42,7 @@ header[logo] {
   position: fixed;
   top: 1lh;
   left: 50%;
-  font-size: typeScale(4);
-  font-weight: bold;
-  padding: 1lh;
   transform: translateX(-50%);
-  color: getColor(green, darker);
-  background-color: getColor(green, neon);
   z-index: 20000;
 }
 
@@ -70,7 +66,7 @@ section[archive] {
 }
 
 header[small] {
-  font-size: typeScale(4);
+  //font-size: typeScale(4);
   font-weight: bold;
 }
 
@@ -79,19 +75,13 @@ header[intro] {
 }
 
 p[intro] {
-  font-size: typeScale(4);
-  margin-top: 0;
-  margin-bottom: 2lh;
 
 }
 
 p[connect] {
-  font-size: typeScale(4);
   width: 75%;
 }
 
-footer[container] {
-  border-top: 1px solid whitesmoke;
-  padding: 1lh;
+footer p {
   color: getColor(gray, light);
 }
