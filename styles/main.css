@@ -908,6 +908,20 @@ ol {
     content: counter(ol-counter) ". ";
     color: #777; }
 
+ul {
+  list-style-type: none; }
+  ul li {
+    padding-bottom: 1.5rem;
+    position: relative;
+    margin-left: 3rem;
+    width: 65%; }
+  ul li::before {
+    position: absolute;
+    left: -1.5rem;
+    top: -0.075rem;
+    content: "⊙";
+    color: #777; }
+
 header[logo] {
   position: fixed;
   top: 1.5rem;
@@ -939,8 +953,9 @@ header[small] {
 header[intro] {
   color: #666666; }
 
-p[connect] {
-  width: 75%; }
-
-footer p {
-  color: #808080; }
+footer {
+  margin: 0;
+  padding: 1.5rem; }
+  footer p {
+    font-size: 0.83333rem;
+    color: #808080; }

@@ -18,7 +18,7 @@ a {
 }
 
 ol {
-  //margin-top: 0;
+
   counter-reset: ol-counter;
   list-style-type: none;
 
@@ -34,6 +34,26 @@ ol {
     left: -1lh;
     counter-increment: ol-counter;
     content: counter(ol-counter)". ";
+    color: getColor(text, secondary);
+  }
+}
+
+ul {
+
+  list-style-type: none;
+
+  li {
+    padding-bottom: 1lh;
+    position: relative;
+    margin-left: 2lh;
+    width: 65%;
+  }
+
+  li::before {
+    position: absolute;
+    left: -1lh;
+    top: -0.05lh;
+    content: "⊙";
     color: getColor(text, secondary);
   }
 }
@@ -79,9 +99,15 @@ p[intro] {
 }
 
 p[connect] {
-  width: 75%;
 }
 
-footer p {
-  color: getColor(gray, light);
+footer {
+
+  margin: 0;
+  padding: 1lh;
+
+  p {
+    font-size: typeScale(1);
+    color: getColor(gray, light);
+  }
 }
